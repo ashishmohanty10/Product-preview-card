@@ -8,9 +8,9 @@ const App = () => {
     <>
       <main className="bg-creame h-screen w-full">
         <div className="container flex justify-center items-center h-screen border-2 mx-auto my-auto">
-          <div className="md:max-w-[600px] md:h-[500px] max-w-[400px] rounded-lg bg-white">
-            <div className="grid md:grid-cols-2 grid-rows-2 justify-between gap-2 items-center">
-              <div>
+          <div className="">
+            <div className="flex flex-col md:flex-row justify-between gap-2 items-center md:max-w-[600px] h-fit max-w-[400px] rounded-lg bg-white">
+              <div className="md:w-1/2">
                 <img
                   src={DestopProduct}
                   alt=""
@@ -20,11 +20,11 @@ const App = () => {
                 <img
                   src={MobileProduct}
                   alt=""
-                  className="md:hidden w-[400px] h-[300px] rounded-t-lg"
+                  className="md:hidden w-[400px] h-[250px] rounded-t-lg"
                 />
               </div>
 
-              <div className="flex flex-col justify-between p-2 md:gap-4">
+              <div className="flex flex-col justify-between p-2 md:gap-4 md:w-1/2">
                 <p className="font-monsterat text-darkGraishBlue tracking-widest font-medium mb-2">
                   PERFUME
                 </p>
@@ -45,7 +45,7 @@ const App = () => {
                   </span>
                 </p>
 
-                <div className="flex justify-center items-center py-3 px-4 bg-Cyan hover:text-darkCyan duration-75 text-sm font-bold text-white gap-2  rounded-lg">
+                <div className="flex justify-center items-center py-3 px-4 bg-Cyan hover:bg-darkCyan duration-75 text-sm font-bold text-white gap-2  rounded-lg">
                   <FaShoppingCart />
                   <p>Add to Cart</p>
                 </div>
